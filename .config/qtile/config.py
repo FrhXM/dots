@@ -182,13 +182,14 @@ screens = [
                 ),
                 #=-/ Show Workspaces /-=#
                 widget.GroupBox(
+                    font="Noto Sans Mono CJK JP",
                     highlight_method="text",
                     this_current_screen_border=catppuccin["Green"],
                     urgent_alert_method="text",
                     urgent_text=catppuccin["Red"],
                     active=catppuccin["Text"],
                     inactive=catppuccin["Surface0"],
-                    fontsize=15,
+                    fontsize=18,
                     disable_drag=True,
                     background=catppuccin["Surface2"],
                 ),
