@@ -190,7 +190,7 @@ screens = [
                     urgent_text=catppuccin["Red"],
                     active=catppuccin["Text"],
                     inactive=catppuccin["Surface0"],
-                    fontsize=18,
+                    fontsize=15,
                     disable_drag=True,
                     background=catppuccin["Surface2"],
                 ),
