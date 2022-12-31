@@ -66,6 +66,8 @@ keys = [
     Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key([mod, "shift", "control"], "h", lazy.layout.swap_column_left()),
+    Key([mod, "shift", "control"], "l", lazy.layout.swap_column_right()),
     #=-/ Shrink  window /-=#
     Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
     Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
@@ -126,11 +128,11 @@ layout_theme = {
                 "margin": 5,
                 "border_width": 3,
                 "border_on_single": True,
-                "border_focus" : catppuccin['Mauve'],
+                "border_focus" : catppuccin['Teal'],
                 "border_normal": catppuccin['Surface1'],
                }
 layouts = [
-    layout.Columns(**layout_theme),
+    layout.Columns(**layout_theme, border_focus_stack=catppuccin["Red"]),
     layout.Max(**layout_theme),
     # layout.Stack(**layout_theme,num_stacks=2),
     # layout.Bsp(**layout_theme),
@@ -154,8 +156,7 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
-# █▄▄ ▄▀█ █▀█
-# █▄█ █▀█ █▀▄
+#=-/ Bar -=/#
 screens = [
     Screen(
         top=bar.Bar(
