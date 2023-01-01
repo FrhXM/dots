@@ -4,7 +4,7 @@
 import os
 import subprocess
 from libqtile import bar, layout, widget, hook
-from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
+from libqtile.config import Click, Drag, Group, Key, KeyChord, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 #==========================================================================#
@@ -117,9 +117,11 @@ groups.append(ScratchPad('scratchpad', [
 ]))
 #=-/ extend keys list with keybinding for scratchpad /-=#
 keys.extend([
-    Key(["control"], "1", lazy.group['scratchpad'].dropdown_toggle('term')),
-    Key(["control"], "2", lazy.group['scratchpad'].dropdown_toggle('vol')),
-    Key(["control"], "3", lazy.group['scratchpad'].dropdown_toggle('browser')),
+    KeyChord([mod], "s", [
+    Key([], "t", lazy.group['scratchpad'].dropdown_toggle('term')),
+    Key([], "v", lazy.group['scratchpad'].dropdown_toggle('vol')),
+    Key([], "w", lazy.group['scratchpad'].dropdown_toggle('browser')),
+    ])
 ])
 #==========================================================================#
 #========================= Layouts Algorithms  ============================#
