@@ -11,5 +11,5 @@
 /usr/bin/nm-applet &
 # OTHERS #
 #--------#
-xwallpaper --zoom ~/pix/wall/myGirl2.jpg &
+xwallpaper --zoom ~/pix/wall/dream.jpg &
 xset r rate 200 80 &
