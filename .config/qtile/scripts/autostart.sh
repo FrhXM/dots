@@ -2,7 +2,7 @@
 # APP DEMON #
 #-----------#
 /usr/bin/unclutter &
-/usr/bin/udiskie &
+/usr/bin/udiskie -s -N &
 /usr/bin/dunst &
 /usr/bin/picom &
 # SYSTEMTRAY #
