@@ -154,7 +154,7 @@ layouts = [
 widget_defaults = dict(
     font="JetBrains Mono",
     fontsize=14,
-    padding=3,
+    padding=10,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -171,7 +171,6 @@ screens = [
                 #=-/ Show Icons Distro /-=#
                 widget.TextBox(
                     text="",
-                    padding=10,
                     fontsize=30,
                     foreground=catppuccin["Blue"],
                     background=catppuccin["Crust"],
@@ -194,6 +193,8 @@ screens = [
                     inactive=catppuccin["Surface0"],
                     fontsize=15,
                     disable_drag=True,
+                    padding=6,
+                    fareground=catppuccin["Text"],
                     background=catppuccin["Surface2"],
                 ),
                 widget.TextBox(
@@ -206,7 +207,6 @@ screens = [
                 #=-/ Show Current Layout Icons -=/#
                 widget.CurrentLayoutIcon(
                     scale=0.65,
-                    padding=10,
                     background=catppuccin["Mantle"],
                     foreground=catppuccin["Surface0"],
                 ),
@@ -219,8 +219,8 @@ screens = [
                 ),
                 #=-/ Show Window Name -=/#
                 widget.WindowName(
+                    max_chars=80,
                     background=catppuccin["Surface0"],
-                    padding=10,
                 ),
                 #=-/ Show Number Of Update -=/#
                 widget.TextBox(
@@ -231,14 +231,14 @@ screens = [
                     foreground=catppuccin["Red"],
                 ),
                 widget.CheckUpdates(
-                    background  = catppuccin['Red'],
-                    foreground  = catppuccin["Red"],
                     font        ="Font Awesome 6 Free Solid",
                     fontsize    = 12,
-                    padding     = 15,
                     distro      = 'Arch_checkupdates',
-                    no_update_string =' ',
+                    no_update_string = ' ',
                     display_format   = '  {updates}',
+                    padding=20,
+                    background  = catppuccin['Red'],
+                    foreground  = catppuccin["Red"],
                     mouse_callbacks={
                         "Button1": lazy.spawn("kitty sudo pacman -Syu"),
                     },
@@ -272,10 +272,10 @@ screens = [
                     foreground=catppuccin["Mauve"],
                 ),
                 widget.Backlight(
-                    background=catppuccin["Mauve"],
-                    foreground=catppuccin["Surface0"],
                     backlight_name="intel_backlight",
                     fmt=" {}",
+                    background=catppuccin["Mauve"],
+                    foreground=catppuccin["Surface0"],
                 ),
                 #=-/ Show Volume -=/#
                 widget.TextBox(
@@ -322,6 +322,7 @@ screens = [
                     foreground=catppuccin["Base"],
                 ),
                 widget.Systray(
+                    icon_size=30,
                     background=catppuccin["Base"],
                 ),
                 #=-/ Show Date -=/#
