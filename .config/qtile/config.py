@@ -322,7 +322,7 @@ screens = [
                     foreground=catppuccin["Base"],
                 ),
                 widget.Systray(
-                    icon_size=30,
+                    icon_size=20,
                     background=catppuccin["Base"],
                 ),
                 #=-/ Show Date -=/#
