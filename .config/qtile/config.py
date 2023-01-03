@@ -12,10 +12,11 @@ from libqtile.utils import guess_terminal
 #==========================================================================#
 mod  = "mod1"
 mod4 = "mod4"
-myTerminal = guess_terminal()
-myBrowser  = "qutebrowser"
-myLauncher = "rofi -show drun -show-icons"
-myPowerMenu= "bash /home/frhxm/.config/rofi/scripts/powerMenu.sh"
+myTerminal   = guess_terminal()
+myBrowser    = "qutebrowser"
+myLauncher   = "rofi -show drun -show-icons"
+myPowerMenu  = "bash /home/frhxm/.config/rofi/scripts/powerMenu.sh"
+myFileManager= "nemo"
 catppuccin = {
 "Rosewater" : "#f5e0dc",
 "Flamingo"  : "#f2cdcd",
@@ -86,6 +87,7 @@ keys = [
     Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
     Key([mod], "d", lazy.spawn(myLauncher), desc="Launch Rofi"),
     Key([mod], "w", lazy.spawn(myBrowser), desc="Launch qutebrowser"),
+    Key([mod], "Home", lazy.spawn(myFileManager), desc="Launch qutebrowser"),
     Key([mod, "Shift"], "e", lazy.spawn(myPowerMenu), desc="Launch Power Menu"),
 ]
 #==========================================================================#
