@@ -1,14 +1,14 @@
 #!/usr/bin/sh
 # APP DEMON #
 #-----------#
-/usr/bin/unclutter &
 /usr/bin/udiskie -s -N &
+/usr/bin/unclutter &
 /usr/bin/dunst &
 /usr/bin/picom &
 # SYSTEMTRAY #
 #------------#
-/usr/bin/blueman-applet &
 /usr/bin/nm-applet &
+#/usr/bin/blueman-applet &
 # OTHERS #
 #--------#
 xwallpaper --zoom ~/pix/wall/fav.jpg &
