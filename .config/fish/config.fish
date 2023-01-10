@@ -123,6 +123,7 @@ alias update_grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'	# After Update Lin
 
 ## alias for configs
 alias qtilec="nvim ~/.config/qtile/config.py"
+alias recompile_qtile="python -m py_compile ~/.config/qtile/config.py" # Test Syntax Error in Qtile
 alias fishc="nvim ~/.config/fish/config.fish"
 alias kittyc="nvim ~/.config/kitty/kitty.conf"
 alias nvimc="nvim ~/.config/nvim/init.lua"
