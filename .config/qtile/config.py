@@ -302,7 +302,7 @@ screens = [
                         "Button3": lazy.spawn("kitty pulsemixer"),
                     },
                 ),
-                #=-/ Show Clock -=/#
+                #=-/ Show Date -=/#
                 widget.TextBox(
                     text="",
                     padding=0,
@@ -311,6 +311,7 @@ screens = [
                     foreground=catppuccin["Sapphire"],
                 ),
                 widget.Clock(
+                    fmt=" {}",
                     format="%I:%M %p",
                     background=catppuccin["Sapphire"],
                     foreground=catppuccin["Mantle"],
@@ -336,6 +337,7 @@ screens = [
                     foreground=catppuccin["Green"],
                 ),
                 widget.Clock(
+                    fmt="📆 {}",
                     format="%a %Y-%m-%d",
                     background=catppuccin["Green"],
                     foreground=catppuccin["Mantle"],
@@ -402,6 +404,7 @@ floating_layout = layout.Floating(
 #============================ Others ======================================#
 #==========================================================================#
 auto_fullscreen = True
+cursor_warp = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 auto_minimize = True
