@@ -4,8 +4,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export MYVIMRC="$HOME/.config/nvim/init.lua"
 export VIMINIT="source $MYVIMRC"
-export LESSHISTFILE=-
-export HISTFILE="$HOME/.config/bash/.bash_history"
+# export LESSHISTFILE=-
+# export HISTFILE="$HOME/.config/bash/.bash_history"
 ###---------- SHELL OPTIONS -------###
 set -o vi
 shopt -s autocd
