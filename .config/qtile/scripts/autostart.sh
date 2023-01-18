@@ -11,5 +11,5 @@
 #/usr/bin/blueman-applet &
 # OTHERS #
 #--------#
-xwallpaper --zoom ~/pix/wall/fav.jpg &
+xwallpaper --zoom ~/pix/wall/myGirl2.jpg &
 xset r rate 200 80 &
