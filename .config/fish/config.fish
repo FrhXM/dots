@@ -113,9 +113,7 @@ alias usb='cd /run/media/frhxm/ && ls'
 
 ## Pacman && yay
 alias update='sudo pacman -Syu'
-alias upgrade='sudo pacman -Syu && echo "UPGRADED"'
-alias pr='sudo pacman -Rsn'
-alias pc='sudo pacman -Scc && echo "Cache Is Clean Now"'
+alias upgrade='sudo pacman -Syu'
 
 ## Grub && (i can use hooks To auto update grub after update Linux or grub but idon't want)
 alias install_grub='sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH' # After Update Grub
