@@ -12,7 +12,7 @@ from libqtile.utils import guess_terminal
 #==========================================================================#
 mod  = "mod1"
 mod4 = "mod4"
-myTerminal   = guess_terminal()
+myTerminal   = guess_terminal("kitty")
 myBrowser    = "qutebrowser"
 myLauncher   = "rofi -show drun -show-icons"
 myPowerMenu  = "bash /home/frhxm/.config/rofi/scripts/powerMenu.sh"
@@ -404,7 +404,7 @@ floating_layout = layout.Floating(
 #============================ Others ======================================#
 #==========================================================================#
 auto_fullscreen = True
-cursor_warp = True
+cursor_warp = False
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 auto_minimize = True
