@@ -1,10 +1,10 @@
 #!/usr/bin/sh
 # APP DEMON #
 #-----------#
-/usr/bin/udiskie -s -N &
-/usr/bin/unclutter &
 /usr/bin/dunst &
-/usr/bin/picom &
+/usr/bin/unclutter &
+/usr/bin/picom -b -f &
+/usr/bin/udiskie -s -N &
 # SYSTEMTRAY #
 #------------#
 /usr/bin/nm-applet &
