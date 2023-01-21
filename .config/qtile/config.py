@@ -113,8 +113,8 @@ for i in groups:
 #==========================================================================#
 #=-/ Append scratchpad with dropdowns to groups /-=#
 groups.append(ScratchPad('scratchpad', [
-    DropDown('term', 'kitty', width=0.4, height=0.5, x=0.3, y=0.1, opacity=1),
-    DropDown('vol', 'kitty pulsemixer', width=0.4, height=0.6, x=0.3, y=0.1, opacity=1),
+    DropDown('term', 'kitty', width=0.6, height=0.55, x=0.2, y=0.1, opacity=1),
+    DropDown('vol', 'kitty pulsemixer', width=0.4, height=0.29, x=0.3, y=0.1, opacity=1),
     DropDown('browser', 'firefox', width=0.8, height=0.8, x=0.1, y=0.1, opacity=1),
 ]))
 #=-/ extend keys list with keybinding for scratchpad /-=#
@@ -129,7 +129,7 @@ keys.extend([
 #========================= Layouts Algorithms  ============================#
 #==========================================================================#
 layout_theme = {
-                "margin": 5,
+                "margin": 4,
                 "border_width": 3,
                 "border_on_single": True,
                 "border_focus" : catppuccin['Teal'],
