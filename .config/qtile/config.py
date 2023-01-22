@@ -129,7 +129,7 @@ keys.extend([
 #========================= Layouts Algorithms  ============================#
 #==========================================================================#
 layout_theme = {
-                "margin": 4,
+                "margin": 2,
                 "border_width": 3,
                 "border_on_single": True,
                 "border_focus" : catppuccin['Teal'],
@@ -404,7 +404,7 @@ floating_layout = layout.Floating(
 #============================ Others ======================================#
 #==========================================================================#
 auto_fullscreen = True
-cursor_warp = False
+cursor_warp = True
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 auto_minimize = True
