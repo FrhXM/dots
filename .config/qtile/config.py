@@ -129,7 +129,7 @@ keys.extend([
 #========================= Layouts Algorithms  ============================#
 #==========================================================================#
 layout_theme = {
-                "margin": 2,
+                "margin": 4,
                 "border_width": 3,
                 "border_on_single": True,
                 "border_focus" : catppuccin['Teal'],
