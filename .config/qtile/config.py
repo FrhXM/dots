@@ -240,7 +240,7 @@ screens = [
                     display_format   = '  {updates}',
                     padding=20,
                     background  = catppuccin['Red'],
-                    foreground  = catppuccin["Red"],
+                    foreground  = catppuccin["Surface0"],
                     mouse_callbacks={
                         "Button1": lazy.spawn("kitty sudo pacman -Syu"),
                     },
@@ -273,9 +273,16 @@ screens = [
                     background=catppuccin["Pink"],
                     foreground=catppuccin["Mauve"],
                 ),
+                widget.TextBox(
+                    background=catppuccin["Mauve"],
+                    foreground=catppuccin["Surface0"],
+                    text="盛",
+                    font="FiraCode Nerd Font Mono",
+                    fontsize=28,
+                    padding=0,
+                ),
                 widget.Backlight(
                     backlight_name="intel_backlight",
-                    fmt=" {}",
                     background=catppuccin["Mauve"],
                     foreground=catppuccin["Surface0"],
                 ),
@@ -314,7 +321,7 @@ screens = [
                     fmt=" {}",
                     format="%I:%M %p",
                     background=catppuccin["Sapphire"],
-                    foreground=catppuccin["Mantle"],
+                    foreground=catppuccin["Surface0"],
                 ),
                 #=-/ Show System Tray -=/#
                 widget.TextBox(
