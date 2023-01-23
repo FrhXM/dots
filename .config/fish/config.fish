@@ -116,7 +116,7 @@ alias update='sudo pacman -Syu'
 alias upgrade='sudo pacman -Syu'
 
 ## Grub && (i can use hooks To auto update grub after update Linux or grub but idon't want)
-alias install_grub='sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=ARCH' # After Update Grub
+alias install_grub='sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB' # After Update Grub
 alias update_grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'	# After Update Linux Karnel
 
 ## alias for configs
