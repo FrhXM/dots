@@ -233,17 +233,18 @@ screens = [
                     foreground=catppuccin["Lavender"],
                 ),
                 widget.CheckUpdates(
-                    background  = catppuccin['Lavender'],
+                    background  = catppuccin["Lavender"],
                     foreground  = catppuccin["Surface0"],
-                    padding     = 20,
                     font        = "Font Awesome 6 Free Solid",
                     fontsize    = 12,
-                    distro      = 'Arch_checkupdates',
-                    no_update_string = ' ',
-                    display_format   = '  {updates}',
-                    mouse_callbacks={
-                        "Button1": lazy.spawn("kitty sudo pacman -Syu"),
-                    },
+                    padding     = 20,
+                    distro      = "Arch_checkupdates",
+                    colour_no_updates   = catppuccin["Surface0"],
+                    colour_have_updates = catppuccin["Red"],
+                    no_update_string    = " ",
+                    display_format      = "  {updates}",
+                    execute             = "kitty sudo pacman -Syu",
+                    update_interval     = 20,
                 ),
                 #=-/ Show Battery -=/#
                 widget.TextBox(
