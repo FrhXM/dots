@@ -278,7 +278,7 @@ screens = [
                     foreground=catppuccin["Surface0"],
                     text="盛",
                     font="FiraCode Nerd Font Mono",
-                    fontsize=28,
+                    fontsize=26,
                     padding=0,
                 ),
                 widget.Backlight(
