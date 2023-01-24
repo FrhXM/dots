@@ -17,7 +17,7 @@ myBrowser    = "qutebrowser"
 myLauncher   = "rofi -show drun -show-icons"
 myPowerMenu  = "bash /home/frhxm/.config/rofi/scripts/powerMenu.sh"
 myFileManager= "nemo"
-catppuccin = {
+catppuccin   = {
 "Rosewater" : "#f5e0dc",
 "Flamingo"  : "#f2cdcd",
 "Pink"      : "#f5c2e7",
@@ -222,7 +222,9 @@ screens = [
                 #=-/ Show Window Name -=/#
                 widget.WindowName(
                     max_chars=80,
+                    fontsize=15,
                     background=catppuccin["Surface0"],
+                    foreground=catppuccin["Text"],
                 ),
                 #=-/ Show Number Of Update -=/#
                 widget.TextBox(
